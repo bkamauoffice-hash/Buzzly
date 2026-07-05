@@ -1,32 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buzzly</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
+}
 
-<header>
-  <h1>Buzzly</h1>
-</header>
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#ff0050;
+}
 
-<main>
-  <div class="post">
-    <h3>Welcome to Buzzly 🎉</h3>
-    <p>Create, share and discover amazing content.</p>
-  </div>
-</main>
+.icons button{
+background:none;
+border:none;
+font-size:22px;
+color:white;
+}
 
-<nav>
-  <button>🏠</button>
-  <button>🔍</button>
-  <button>➕</button>
-  <button>❤️</button>
-  <button>👤</button>
-</nav>
+.story-bar{
+display:flex;
+overflow:auto;
+padding:10px;
+background:#222;
+}
 
-<script src="js/app.js"></script>
-</body>
-</html>
+.story{
+text-align:center;
+margin-right:15px;
+}
+
+.story img{
+border-radius:50%;
+}
+
+.post{
+background:#222;
+margin:15px;
+border-radius:15px;
+overflow:hidden;
+}
+
+.post h3{
+padding:10px;
+}
+
+.post img{
+display:block;
+}
+
+.post p{
+padding:10px;
+}
+
+.actions{
+padding:10px;
+font-size:18px;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+background:#000;
+padding:12px 0;
+}
+
+.bottom-nav button{
+background:none;
+border:none;
+font-size:24px;
+color:white;
+}
