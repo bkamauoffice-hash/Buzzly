@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buzzly</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header>
-  <h1>Buzzly</h1>
-</header>
-
-<main>
-  <div class="post">
-    <h3>Welcome to Buzzly 🎉</h3>
-    <p>Create, share and discover amazing content.</p>
-  </div>
-</main>
-
-<nav>
-  <button>🏠</button>
-  <button>🔍</button>
-  <button>➕</button>
-  <button>❤️</button>
-  <button>👤</button>
-</nav>
-
-<script src="js/app.js"></script>
-</body>
-</html>
+document.querySelectorAll(".bottom-nav button").forEach(button=>{
+button.addEventListener("click",()=>{
+alert("Coming soon!");
+});
+});
