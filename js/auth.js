@@ -50,3 +50,17 @@ window.login = function () {
       alert(error.message);
     });
 };
+window.signup = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            alert("Account created successfully!");
+            window.location.href = "index.html";
+        })
+        .catch((error) => {
+            alert(error.code + "\n" + error.message);
+            console.log(error);
+        });
+};
